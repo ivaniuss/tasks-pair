@@ -3,32 +3,32 @@ import { Controller, Get, Post, Put, Delete } from '@nestjs/common';
 @Controller('tasks')
 export class TasksController {
   @Get()
-  getTasks() {
-    return 'tasks';
+  getTasks(): object {
+    return {};
   }
 
   @Get('task')
-  getTask() {
-    return 'task';
+  getTask(): object {
+    return {};
   }
 
   @Post()
-  createTask() {
-    return 'create task';
+  createTask(): object {
+    return {};
   }
 
   @Put()
-  updateTask() {
-    return 'update task';
+  updateTask(): object {
+    return {};
   }
 
   @Delete()
-  deleteTask() {
-    return 'delete task';
+  deleteTask(): string {
+    return 'Task deleted!';
   }
 
   @Delete('tasks')
-  deleteTasks() {
-    return 'delete tasks';
+  deleteTasks(): string {
+    return 'Tasks deleted!';
   }
 }
